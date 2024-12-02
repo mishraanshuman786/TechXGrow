@@ -1,0 +1,825 @@
+/* Basic Reset */
+body, html {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.icons {
+      font-size: 18px;
+      color: white;
+      margin: 10px;
+    }
+.icons:hover {
+      color: #007bff;
+    }
+/* General Styles */
+.container {
+  position: relative;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+.desktop-navbar {
+  display: flex;
+  width: 90%;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 47px;
+  
+  color: black;
+  position: fixed;
+  z-index: 1000;
+  top: 0px;
+  background-color: rgba(47, 79, 79, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo a {
+  color: black;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-items {
+  color: black;
+  cursor: pointer;
+  padding: 2px;
+}
+
+.nav-items:hover {
+  background-color: black;
+  
+}
+
+.nav-items a {
+ color: white;
+  text-decoration: none;
+}
+
+/* Slider */
+.desktop-slider {
+  height: 280px;
+  width: 100vw;
+  margin-top: 40px;
+  padding-left: 180px;
+ 
+}
+
+
+.desktop-slider .desktop-slider-wrapper {
+  width: 160vw;
+  height: 100%;
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.desktop-slider .desktop-slider-wrapper img {
+  width: 400px;
+  height: 100%;
+  border-radius: 4px;
+  align-self: flex-start;
+}
+
+/* Container2 Styles */
+.container2 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container2 .background-video {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.container2-content {
+  z-index: 1;
+  color: black;
+  font-size: 24px;
+  width: 210vw;
+  height: 100%;
+  
+  margin-top: 40px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+ 
+  
+}
+
+/* intro section statrt */
+
+.intro-section{
+  width: 100vw;
+  height: 90vh;
+  
+  position: absolute;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* intro section end */
+
+/* services section start */
+
+/* Services Section */
+.services-section {
+  padding: 50px 20px;
+  background-color: transparent;
+  text-align: center;
+  position: absolute;
+  width: 100vw;
+  height: 90vh;
+  left: 100%;
+ 
+}
+
+.services-heading {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 5px;
+  width: 280px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.service-title {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.service-description {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.5;
+}
+
+
+/* products section end */
+
+/* products section start */
+
+/* products Section */
+.products-section {
+  padding: 50px 20px;
+  background-color: transparent;
+  text-align: center;
+  position: absolute;
+  width: 100vw;
+  height: 90vh;
+  left: 200%;
+ 
+}
+
+.products-heading {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.products {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 5px;
+  width: 280px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.products:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.products-title {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.products-description {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.5;
+}
+
+
+
+
+
+
+/* products section end */
+
+/* =================================================================== */
+/* container 3 */
+.container-3{
+  width: 100vw;
+ 
+  background-color: darkslategrey;
+  overflow: hidden;
+
+}
+
+.industries-section {
+  text-align: center;
+  margin: 50px auto;
+  padding: 30px;
+  padding-top: 10px;
+}
+
+.industries-heading {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.industries-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.industry {
+  flex: 1 1 calc(25% - 20px);
+  min-width: 250px;
+  max-width: 200px;
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.industry-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.industry-description {
+  font-size: 14px;
+  color: #555;
+}
+
+/* container-4 */
+.container4{
+  width: 100vw;
+ position: relative;
+  
+  
+  background-color: darkslategrey;
+ 
+  overflow: hidden;
+}
+
+
+
+
+/* properties section stART */
+.properties-section {
+  text-align: center;
+  margin: 50px auto;
+  margin-top: 10px;
+  margin-left: 40px;
+
+  
+ 
+  background-color: #f0f8ff;
+  border-radius: 8px;
+}
+
+.properties-heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.properties-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.property {
+  flex: 1 1 calc(25% - 20px);
+  min-width: 250px;
+  max-width: 300px;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.property:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.property-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #0077b6;
+}
+
+.property-description {
+  font-size:14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* navbar start */
+
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  background-color:darkslategrey ;
+ 
+}
+
+/* Left Side */
+.navbar-left {
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+  height: 150px;
+  align-items: center;
+}
+
+.footer-logo  {
+ text-align: left;
+ width: 100%;
+ 
+  color: white;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+  transform: scale(1.2);
+}
+
+/* Right Side */
+.navbar-right {
+  display: flex;
+  gap: 40px;
+  
+  height: 150px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.column h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: fkex;
+  flex-direction: column;
+}
+
+.column ul li {
+  margin-bottom: 5px;
+  font-size:14px;
+  color: whitesmoke;
+}
+
+.column ul li:hover {
+  color: #007bff;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+   
+
+    .container { /* Added a dot to indicate it's a class */
+        position: relative;
+       
+        padding-bottom: 20px;
+        overflow: hidden;
+    }
+
+    .background-video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    .desktop-navbar {
+        display: none; /* This class should be used for desktop navbar */
+    }
+
+    .mobile-navbar .logo {
+        border: 1px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 86px;
+        left: 10px;
+        z-index: 5;
+        width: 100px;
+        color: white;
+        background-color: rgba(47, 79, 79, 0.6);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        height: 50px;
+        border-radius: 4px;
+        margin-top: -76px;
+        margin-bottom: 10px;
+    }
+
+    .mobile-navbar .logo h6 {
+        color: white;
+        font-size: 16px;
+    }
+
+    .mobile-navbar ul {
+        position: absolute;
+        z-index:4;
+        width: 100%;
+        height: 600px; /* Changed to auto to fit content */
+        background-color: black;
+        left: 0; /* Changed to 0 to align with the left edge */
+        top: 0px; /* Adjusted to position below the logo */
+        
+        display: none; /* Hide by default */
+        padding-top: 90px;
+       transition: display 1s ease-in;
+       
+    }
+
+    .mobile-navbar ul li {
+        color: white;
+        padding-top: 12px;
+        padding-left: 20px;
+       
+       
+    }
+
+    
+
+    /* Show the menu when toggled */
+    .mobile-navbar ul.show {
+       
+        display: block; /* Show the menu when the class 'show' is added */
+    }
+
+    /* hiding desktop slider start */
+ .desktop-slider{
+  display: none;
+ }
+ /* hiding desktop slider end */
+
+    /* slider mobile responsive start */
+.slider {
+    position: relative;
+    overflow: hidden; /* Hide overflow to prevent images from spilling out */
+    width: 100%; /* Full width */
+    height: auto; /* Height will be determined by the images */
+}
+
+.slider-wrapper {
+    display: flex; /* Use flexbox to align images in a row */
+    transition: transform 0.5s ease; /* Smooth transition for sliding effect */
+}
+
+.slider img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    flex-shrink: 0; /* Prevent images from shrinking */
+}
+
+/* Optional: Add styles for navigation buttons */
+.slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2; /* Ensure buttons are above images */
+}
+
+.slider-button.left {
+    left: 10px; /* Position left button */
+    background-color: darkslategrey;
+    color: white;
+    border: 2px solid white;
+    border-radius: 4px;
+}
+
+.slider-button.right {
+    right: 10px; /* Position right button */
+     background-color: darkslategrey;
+    color: white;
+     border: 2px solid white;
+      border-radius: 4px;
+}
+
+/* slider mobile responsive end */
+
+/* container 2 mobile responsive start */
+/* Mobile styles for the slider */
+
+.container2{
+    z-index: 100;
+   
+    
+    width: 100%;
+   
+}
+
+/* intro section start */
+
+ .intro-section h1 {
+        font-size: 1.8em; /* Smaller font size for mobile */
+       color:darkslategrey;
+        text-align: center;
+    }
+
+    .intro-section p {
+        font-size: 1em; /* Smaller font size for mobile */
+        text-align: center;
+        color: darkslategrey;
+    }
+
+    .intro-section {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       background-color: transparent;
+    }
+
+/* intro section end */
+
+/* services section start */
+
+ .services-heading {
+        font-size: 1.5em; /* Smaller font size for mobile */
+    }
+
+    .service {
+        flex: 1 1 100%; /* Make each service take full width on mobile */
+        margin: 10px 0; /* Space between service items */
+    }
+
+    .service-title {
+        font-size: 1.2em; /* Smaller font size for service titles */
+    }
+
+    .service-description {
+        font-size: 0.9em; /* Smaller font size for descriptions */
+    }
+
+    .services-section {
+        padding: 15px; /* Adjust padding for mobile */
+        background-color: darkslategrey;
+    }
+
+/* services section end */
+
+/* product section start */
+   .products-heading {
+        font-size: 1.5em; /* Smaller font size for mobile */
+    }
+
+    .products {
+        flex: 1 1 100%; /* Make each product take full width on mobile */
+        margin: 10px 0; /* Space between product items */
+    }
+
+    .products-title {
+        font-size: 1.2em; /* Smaller font size for product titles */
+    }
+
+    .products-description {
+        font-size: 0.9em; /* Smaller font size for descriptions */
+    }
+
+    .products-section {
+        padding: 15px; /* Adjust padding for mobile */
+        background-color: darkslategrey;
+    }
+
+
+/* product section end */
+
+/* container 2 mobile responsive end */
+
+/* container 3 start */
+
+.container-3{
+    background-color:darkslategrey ;
+}
+
+/* industries section start */
+ .industries-heading {
+        font-size: 1.5em; /* Smaller font size for mobile */
+    }
+
+    .industry {
+        flex: 1 1 100%; /* Make each industry take full width on mobile */
+        margin: 10px 0; /* Space between industry items */
+    }
+
+    .industry-title {
+        font-size: 1.2em; /* Smaller font size for industry titles */
+    }
+
+    .industry-description {
+        font-size: 0.9em; /* Smaller font size for descriptions */
+    }
+
+    .industries-section {
+        padding: 15px; /* Adjust padding for mobile */
+    }
+
+/* industries section end */
+
+/* container 3 end */
+
+/* container 4 start */
+.container4{
+    background-color: darkslategrey ;
+}
+
+/* properties container start */
+.properties-heading {
+        font-size: 1.5em; /* Smaller font size for mobile */
+    }
+
+    .property {
+        flex: 1 1 100%; /* Make each property take full width on mobile */
+        margin: 10px 0; /* Space between property items */
+    }
+
+    .property-title {
+        font-size: 1.2em; /* Smaller font size for property titles */
+    }
+
+    .property-description {
+        font-size: 0.9em; /* Smaller font size for descriptions */
+    }
+
+    .properties-section {
+      padding-top: 10px;
+      width: 95%;
+        margin: auto;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+/* properties container end */
+/* container 4 end */
+
+/* footer start */
+
+     .navbar {
+        flex-direction: column; /* Stack items vertically */
+        gap: 4px;
+        align-items: flex-start; /* Align items to the start */
+    }
+.navbar-left{
+  flex-direction: row;
+ 
+  justify-content: space-between;
+  height: auto;
+}
+    .navbar-right {
+        flex-direction: row; /* Stack columns vertically */
+        gap: 15px; /* Space between columns */
+        width: 100%; /* Full width for right side */
+    }
+
+    .footer-logo {
+        font-size: 1.5em; /* Smaller logo font size for mobile */
+    }
+
+    .column h3 {
+        font-size: 1.3em; /* Smaller heading font size for mobile */
+    }
+
+    .column li {
+        font-size: 0.9em; /* Smaller list item font size for mobile */
+    }
+
+/* footer end */
+
+}
+
+/* media more than 768px */
+@media screen and (min-width: 769px){
+/* Navbar */
+.mobile-navbar{
+  display: none;
+}
+.slider{
+  display: none;
+}
+}
